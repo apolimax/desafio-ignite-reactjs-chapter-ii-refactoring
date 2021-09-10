@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerFoodCardStyledProps {
+  available: boolean
+}
+
+export const Container = styled.div<ContainerFoodCardStyledProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
